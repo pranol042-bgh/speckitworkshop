@@ -13,11 +13,11 @@ You **MUST** consider the user input before proceeding (if not empty).
 
 ## Outline
 
-1. Run `.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks` from repo root and parse FEATURE_DIR and AVAILABLE_DOCS list. All paths must be absolute. For single quotes in args like "I'm Groot", use escape syntax: e.g 'I'\''m Groot' (or double-quote if possible: "I'm Groot").
+1. Run `.specify/scripts/powershell/check-prerequisites.ps1 -Json -RequireTasks -IncludeTasks` from repo root and parse FEATURE_DIR and AVAILABLE_DOCS list. All paths must be absolute. For single-quote characters in arguments (e.g. I'm Groot), use PowerShell-safe quoting: e.g. `'I''m Groot'` or simply `"I'm Groot"`.
 1. From the executed script, extract the path to **tasks**.
 1. Get the Git remote by running:
 
-```bash
+```powershell
 git config --get remote.origin.url
 ```
 
