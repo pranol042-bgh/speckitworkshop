@@ -1,0 +1,12 @@
+[
+  {
+    "title": "EX-001 - Example: small README update",
+    "body": "Phase: Example\n\nDescription: Add a small README note to demonstrate payload override.\n\nAcceptance: README updated.",
+    "labels": ["doc","example"]
+  },
+  {
+    "title": "EX-002 - Example: add CI skeleton",
+    "body": "Phase: Example\n\nDescription: Add a CI workflow skeleton file to .github/workflows for demo purposes.\n\nAcceptance: Workflow file present.",
+    "labels": ["ci","example"]
+  }
+]
